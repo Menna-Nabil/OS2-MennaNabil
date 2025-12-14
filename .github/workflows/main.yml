@@ -12,12 +12,10 @@ jobs:
 
 
     steps:
-      
-      - name: 'Print  Before folder contents'
-        run: ls  
-
-
       - uses: actions/checkout@v3
 
-      - name: 'Print After folder contents'
-        run: ls  
+      - name: "Login to Docker Hub"
+        run: docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_TOKEN }}
+
+
+       
