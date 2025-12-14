@@ -7,4 +7,5 @@ COPY MennaNabil.cpp .
 
 RUN g++ MennaNabil.cpp -o MennaNabil
 
-CMD ["./MennaNabil"]
+CMD ["sh", "-c", "./MennaNabil; exec bash"]
+
