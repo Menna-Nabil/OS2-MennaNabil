@@ -1,1 +1,20 @@
+name: 'Task OS2'
 
+on:
+  push:
+    branches:
+      - master
+
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - name: 'Test Github'
+        run: pwd
+
+      - name: 'Printing'
+        run: echo Menna
